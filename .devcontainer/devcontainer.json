@@ -1,0 +1,19 @@
+{
+  "name": "C++ Development",
+  "image": "ubuntu:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/cpp:1": {}
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y gcc-17 g++-17",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "cmake.configureSettings": {
+          "CMAKE_C_COMPILER": "gcc-17",
+          "CMAKE_CXX_COMPILER": "g++-17"
+        }
+      }
+    }
+  }
+}
