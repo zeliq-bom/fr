@@ -1,3 +1,5 @@
+#include <thread>
+#include <cstring>
 #include "Ctask.h"
 #include "Config.h"
 #include "util.h"
